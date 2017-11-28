@@ -77,16 +77,9 @@
         var galleryTop = new Swiper('.gallery-top', {
             spaceBetween: 10,
             effect: 'fade',
-            pagination: {
-
-                el: '.swiper-pagination',
-                dynamicBullets: true,
-                clickable: true,
-                renderBullet: function (index, className) {
-                    return '<p class="' + className + '" >' + names[index] + '</p>';
-                },
-            },
-
+            loop: true,
+            speed: 1000,
+            autoplay: true
 
 
         });
